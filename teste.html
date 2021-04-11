@@ -1,0 +1,260 @@
+<div class="pb-5">
+    <div class="card rounded pt-md-3 pb-3 show-empty-callback chart-width-full card-width-full-at-SM" data-start="0"
+        data-tab-chart="asset-price" data-ticker="WHRL4" data-tickertype="acao" data-unitsign="R$">
+        <div class="d-flex justify-between align-items-center mb-2 flex-wrap">
+            <h2 class="card-title m-0">COTAÇÃO DO WHRL4</h2>
+            <div class="align-items-center d-flex justify-end">
+                <i class="material-icons help-icon tooltipped mr-1" data-position="top"
+                    data-tooltip="Gráfico com taxa de atualização de &lt;b class=fw-900&gt;15 minutos&lt;/b&gt;. &lt;br /&gt; Ajustado por desdobramentos, grupamentos e bonificação.">help_outline</i>
+                <div class="container-date-fixed ">
+                    <ul class="tabs transparent d-none d-md-block">
+                        <li class="tab col s3">
+                            <a class=" pl-2 pr-2" data-type="-1" href="#asset-price--1" role="button" title="">
+                                1 dia
+                            </a>
+                        </li>
+                        <li class="tab col s3">
+                            <a class="active pl-2 pr-2" data-type="0" href="#asset-price-0" role="button" title="">
+                                5 dias
+                            </a>
+                        </li>
+                        <li class="tab col s3">
+                            <a class=" pl-2 pr-2" data-type="1" href="#asset-price-1" role="button"
+                                title="Cotação do ativo nos últimos 30 dias">
+                                30 dias
+                            </a>
+                        </li>
+                        <li class="tab col s3">
+                            <a class=" pl-2 pr-2" data-type="2" href="#asset-price-2" role="button"
+                                title="Cotação do ativo nos últimos 6 meses">
+                                6 meses
+                            </a>
+                        </li>
+                        <li class="tab col s3">
+                            <a class=" pl-2 pr-2" data-type="3" href="#asset-price-3" role="button"
+                                title="Cotação do ativo nos últimos 12 meses">
+                                1 ano
+                            </a>
+                        </li>
+                        <li class="tab col s3">
+                            <a class=" pl-2 pr-2" data-type="4" href="#asset-price-4" role="button"
+                                title="Cotação do ativo nos últimos 5 anos">
+                                5 anos
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-block d-md-none">
+                        <ul class="dropdown-content" id="dropdown-asset-price">
+                            <li title="">
+                                <a data-type="-1" role="button">1 dia</a>
+                            </li>
+                            <li title="">
+                                <a data-type="0" role="button">5 dias</a>
+                            </li>
+                            <li title="Cotação do ativo nos últimos 30 dias">
+                                <a data-type="1" role="button">30 dias</a>
+                            </li>
+                            <li title="Cotação do ativo nos últimos 6 meses">
+                                <a data-type="2" role="button">6 meses</a>
+                            </li>
+                            <li title="Cotação do ativo nos últimos 12 meses">
+                                <a data-type="3" role="button">1 ano</a>
+                            </li>
+                            <li title="Cotação do ativo nos últimos 5 anos">
+                                <a data-type="4" role="button">5 anos</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-xsmall dropdown-trigger pl-1 pr-1" data-target="dropdown-asset-price"
+                            href="#!"><span>5 dias</span><i class="material-icons right">arrow_drop_down</i></a>
+                    </div>
+                </div>
+                <div class="container-date-range w-90 w-md-50 mr-3" style="display:none;">
+                    <div class="d-flex align-items-center date-range mt-0 mb-0 ">
+                        <div class="input-field from input-date mt-0 mb-0" title="Data de início da busca">
+                            <input class="datepicker mb-0 input-small" data-max-date="2021-03-27" id="Start"
+                                name="Start" type="text" />
+                        </div>
+                        <span class="divisor text-center ml-1 mr-3 fs-2 fw-900">ATÉ</span>
+                        <div class="input-field to mt-0 mb-0" title="Data de fim da busca">
+                            <input class="datepicker mb-0 input-small" data-max-date="2021-03-27" id="End" name="End"
+                                type="text" />
+                        </div>
+                    </div>
+                </div>
+                <button class="tbn btn-small btn-secondary pl-1 pr-1 btn-range-date ml-1 tooltipped" data-position="top"
+                    data-tooltip="Selecione o &lt;b class='fw-900'&gt;período&lt;/b&gt; que você &lt;b class='fw-900'&gt;deseja&lt;/b&gt;!"
+                    type="button">
+                    <i class="material-icons i-date-range">date_range</i>
+                    <i class="material-icons i-date-fixed" style="display:none">more_horiz</i>
+                </button>
+            </div>
+        </div>
+        <div class="chart-by-fixed">
+            <div class="chart-container" id="asset-price--1" style="display:none " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+            <div class="chart-container" id="asset-price-0" style=" " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+            <div class="chart-container" id="asset-price-1" style="display:none " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+            <div class="chart-container" id="asset-price-2" style="display:none " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+            <div class="chart-container" id="asset-price-3" style="display:none " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+            <div class="chart-container" id="asset-price-4" style="display:none " tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart "></div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-by-range" style="display:none">
+            <div class="chart-container" id="asset-price-range" tabindex="0">
+                <div class="chart-selected-container" style="display:none">
+                    <div class="chart-selected-resume card p-1">
+                        <div class="d-flex align-items-center justify-between">
+                            <div class="price d-flex align-items-center fw-100">
+                                <span class="fw-100 fs-3 symbol">R$</span>
+                                <b class="v-align-middle fw-900"></b>
+                            </div>
+                            <div class="variation d-flex align-items-center fw-100 ml-lg-1">
+                                <i class="material-icons">arrow_upward</i>
+                                <b class="v-align-middle fw-700"></b>
+                                <span>%</span>
+                            </div>
+                        </div>
+                        <div class="period d-flex align-items-center justify-center">
+                            <span class="date-start"></span> - <span class="date-end"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-chart-container md">
+                    <div class="chart"></div>
+                </div>
+            </div>
+        </div>
+        <span class="graph-empty fs-4 fw-100 grey-text text-center text-darken-1 uppercase mt-4" style="display:none">
+            <span class="d-block d-sm-inline-block">Não há dados de cotação </span> neste período</span>
+    </div>
+</div>]
